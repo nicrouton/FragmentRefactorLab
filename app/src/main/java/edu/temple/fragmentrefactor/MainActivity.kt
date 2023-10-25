@@ -11,11 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val displayTextView = findViewById<TextView>(R.id.displayTextView)
+        /*val displayTextView = findViewById<TextView>(R.id.displayTextView)
         val nameEditText = findViewById<EditText>(R.id.nameEditText)
-        val changeButton = findViewById<Button>(R.id.changeButton)
+        val changeButton = findViewById<Button>(R.id.changeButton)*/
 
-        changeButton.setOnClickListener {
+        val fragment1 = HelloFragment()
+
+        /*changeButton.setOnClickListener {
             val name = nameEditText.text
 
             displayTextView.text = if (name.isNotBlank()) {
@@ -23,6 +25,6 @@ class MainActivity : AppCompatActivity() {
             } else {
                 "Please enter your name"
             }
-        }
+        }*/
     }
 }
