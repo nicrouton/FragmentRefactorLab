@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager
             .beginTransaction()
             .add(R.id.fragmentContainerView, fragment1)
-            .addToBackStack(null)
-            .setReorderingAllowed(true)
+
+
             .commit()
 
         /*changeButton.setOnClickListener {
