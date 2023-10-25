@@ -17,6 +17,15 @@ class MainActivity : AppCompatActivity() {
 
         val fragment1 = HelloFragment()
 
+        //add fragment manager
+
+        supportFragmentManager
+            .beginTransaction()
+            .add(R.id.fragmentContainerView, fragment1)
+            .addToBackStack(null)
+            .setReorderingAllowed(true)
+            .commit()
+
         /*changeButton.setOnClickListener {
             val name = nameEditText.text
 
